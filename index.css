@@ -1,0 +1,310 @@
+body {
+    background-color: #14131a;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#dot1, .dot2, .dot3 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    display: inline-block;
+    top: 20px;
+    position: fixed;
+}
+
+#dot1 {
+    background-color: red;
+    left: 20px;
+}
+
+.dot2 {
+    background-color: yellow;
+    left: 45px;
+}
+
+.dot3 {
+    background-color: #2bd576;
+    left: 70px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    height: 100%;
+    background-color: #1c1b23;
+    padding: 20px 0;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.sidebar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.sidebar a:hover {
+    background-color: #444;
+}
+
+.sidebar i {
+    margin-right: 10px;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.profile_section {
+    display: flex;
+    align-items: center;
+    background-color: #1c1b23;
+    color: white;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.profile_picture {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-image: url('DSC_5933.JPG');
+    background-size: cover;
+    background-position: center;
+}
+
+.profile_info {
+    flex: 1;
+}
+
+.about_me {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.about_text {
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 26px;
+    word-spacing: 3px;
+}
+
+.projects {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.allprojects {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 270px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: fit;
+}
+
+.card-content {
+    padding: 9px;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.card p {
+    color: #555;
+}
+
+.skills {
+    color: white;
+    margin-bottom: 50px;
+}
+
+.skill_cards1, .skill_cards2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.skill_rect {
+    width: 120px;
+    height: 30px;
+    background-color: #1c1b23;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1F51FF;
+    color: white;
+    margin: 7px;
+}
+
+.more_projects {
+    color: white;
+}
+
+.spacingg {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card2 {
+    width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #1c1b23;
+    margin: 20px;
+    height: 320px;
+}
+
+.card2 img {
+    width: 100%;
+    height: 200px;
+    object-fit: fit;
+}
+
+.card-content2 {
+    padding: 10px;
+}
+
+.card2 h4 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.card2 p {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #1c1b23;
+    margin-top: 20px;
+    padding: 20px;
+    width: 30%;
+    height: 25px;
+    border: #1c1b23;
+    margin-left: 600px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1200px) {
+    .main-content {
+        margin-left: 230px;
+    }
+
+    .footer {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 220px;
+    }
+
+    .footer {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .profile_section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile_picture {
+        margin-bottom: 20px;
+    }
+
+    .allprojects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .skill_cards1, .skill_cards2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill_rect {
+        width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .spacingg {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card2 {
+        width: 90%;
+    }
+
+    .footer {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
